@@ -1,0 +1,8 @@
+<div>
+<!-- Binding searchItem with one-way data binding -->
+    <!-- <input type="text" placeholder="Search item" [value]="searchItem"> -->
+
+    <!-- Binding searchItem with Two-way data binding -->
+    <input type="text" placeholder="Search item" [(ngModel)]="searchItem">
+    <button (click)="search()">Search</button>
+</div>

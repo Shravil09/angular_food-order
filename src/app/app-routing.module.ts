@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FoodPageComponent } from './food-page/food-page.component';
+import { HomeComponent } from './home/home.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'', component:HomeComponent},
+  {path:'search/:searchItem', component:HomeComponent},
+  //Add tags Routes
+  {path:'tag/:tag', component:HomeComponent},
+  {path:'food/:id', component:FoodPageComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
